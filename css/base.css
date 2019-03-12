@@ -1,0 +1,127 @@
+.sprite {
+  background-image: url(../images/sprite.png); }
+
+body {
+  background-color: #f0f0f0; }
+
+header {
+  position: relative;
+  height: 30px;
+  color: #29B078;
+  background-color: #FFF; }
+  header .icon_weixin {
+    background-position: 0 58px; }
+  header .icon_qq {
+    background-position: 0 29px; }
+  header .icon_weibo {
+    background-position: 38px 58px; }
+
+.header_tel {
+  display: inline;
+  line-height: 30px;
+  color: #29B078; }
+
+.header_icon {
+  float: right;
+  margin: 0 6px;
+  width: 30px;
+  height: 30px; }
+
+nav {
+  position: relative;
+  height: 80px;
+  background-color: #29B078; }
+
+.logo {
+  float: left;
+  width: 107px;
+  padding: 16px 0; }
+
+.nav-btn {
+  float: right;
+  width: 80px;
+  height: 80px;
+  box-sizing: border-box;
+  font-size: 14px;
+  text-align: center;
+  line-height: 80px;
+  color: #fff; }
+
+a:hover .nav-btn {
+  border-style: solid;
+  border-width: 0 0 3px 0;
+  border-color: #fff; }
+
+a:focus .nav-btn {
+  border-style: solid;
+  border-width: 0 0 3px 0;
+  border-color: #fff; }
+
+footer {
+  position: relative;
+  padding-top: 20px;
+  height: 175px;
+  color: #fff;
+  background-color: #29B078; }
+  footer div {
+    height: 120px; }
+  footer p {
+    display: inline-block;
+    color: #fff;
+    font-size: 14px; }
+  footer a:hover p {
+    text-decoration: underline; }
+
+.footer_content_left {
+  padding-top: 5px;
+  width: 250px;
+  line-height: 24px; }
+
+.footer_content_right {
+  width: 210px;
+  line-height: 30px; }
+
+.footer_wx {
+  width: 160px;
+  font-size: 16px;
+  text-align: center; }
+
+.line {
+  height: 18px;
+  line-height: 18px;
+  border-left: 1px solid #FFF;
+  display: inline-block;
+  margin-left: -1px;
+  padding: 0px 4px 0px 6px; }
+
+.footer_blank {
+  padding-right: 4px; }
+
+.img_QR {
+  margin: 3px 1px 0 0;
+  width: 90px; }
+
+.footer_title {
+  font-size: 16px; }
+
+.footer-text {
+  margin-bottom: 54px; }
+
+.footer_copyright {
+  position: absolute;
+  bottom: 0;
+  width: 100vw;
+  height: 25px;
+  color: #FFF;
+  border-top: 1px solid #32C086;
+  box-sizing: border-box;
+  line-height: 22px;
+  text-align: center;
+  overflow-x: hidden; }
+  .footer_copyright p {
+    margin: 0; }
+
+.hidden {
+  display: block; }
+
+/*# sourceMappingURL=base.css.map */
