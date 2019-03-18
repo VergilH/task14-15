@@ -3,6 +3,8 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0">
+  <meta name="format-detection" content="telephone=no">
 	<title>index</title>
 	<link rel="stylesheet" href="css/reset.css">
 	<link rel="stylesheet" href="css/public.css">
@@ -12,7 +14,7 @@
 <body>
 	<header>
 		<div class="setmiddle setwidth">
-			<p class="header_tel">客服热线：010-594-78634</p>
+			<p class="header_tel font_sm">客服热线：010-594-78634</p>
     	<div class="header_icon sprite icon_weixin"></div>
     	<div class="header_icon sprite icon_qq"></div>
     	<div class="header_icon sprite icon_weibo"></div>
@@ -22,19 +24,24 @@
   <nav>
 	  <div class="setmiddle setwidth">
 	  	<img class="logo" src="images/logo.png">
-	  	<a href="task14-2.html">
-	    	<div class="nav-btn">关于</div>
-	  	</a>
-  	  <a href="#">
-  	    <div class="nav-btn">推荐</div>
-  	  </a>
-  	  <a href="task14-3.html">
-  	    <div class="nav-btn">职业</div>
-  	  </a>
-	  	<a href="index.html">
-  	    <div class="nav-btn deline">首页</div>
-      </a>
+	  	<a href="task14-2.html"><div class="nav_btn">关于</div></a>
+  	  <a href="#"><div class="nav_btn">推荐</div></a>
+  	  <a href="task14-3.html"><div class="nav_btn">职业</div></a>
+	  	<a href="index.html"><div class="nav_btn deline">首页</div></a>
       <div class="clearfloat"></div>
+
+      <button type="button" class="dropdown_btn">
+      	<div class="nav-dropdown-btn">
+      		<img src="images/menu.png">
+      	</div>
+    	</button>
+			<div class="nav-dropdown">
+	  		<a href="index.html"><div class="nav-dropdown-menu"><p id="nav-default">首页</p></div></a>
+      	<a href="task8-3.html"><div class="nav-dropdown-menu"><p>职业</p></div></a>
+      	<a href="#"><div class="nav-dropdown-menu"><p>推荐</p></div></a>
+      	<a href="task8-2.html"><div class="nav-dropdown-menu"><p>关于</p></div></a>
+    	</div>
+			<div class="clearfloat"></div>
 	  </div>
   </nav>
 
@@ -50,11 +57,11 @@
       <div class="left footer_content_right">
 	    	<p class="footer_title">旗下网站</p>
 	    	<br>
-	    	<a href="#"><p>草船云孵化器</p>&#12288;&#12288;</a>
-	    	<a href="#"><p>最强IT特训营</p></a>
+	    	<a href="#"><p class="footer_sm_p">草船云孵化器</p>&#12288;&#12288;</a>
+	    	<a href="#"><p class="footer_sm_p">最强IT特训营</p></a>
 	    	<br class="hidden">
-	    	<a href="#"><p>葡萄藤轻游戏</p>&#12288;&#12288;</a>
-	    	<a href="#"><p>桌游精灵</p></a>
+	    	<a href="#"><p class="footer_sm_p">葡萄藤轻游戏</p>&#12288;&#12288;</a>
+	    	<a href="#"><p class="footer_sm_p">桌游精灵</p></a>
       </div>
       <div class="right footer_wx">
 	    	<span>微信公众平台</span>

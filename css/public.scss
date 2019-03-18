@@ -68,14 +68,14 @@
 }
 
 //字体大小 
-.font-lg {
-    font-size: $font-size + 2;
+.font_lg {
+    font-size: $font-size + 2;//18
 }
-.font-nm {
-    font-size: $font-size;
+.font_nm {
+    font-size: $font-size;//16
 }
-.font-sm {
-    font-size: $font-size - 2;
+.font_sm {
+    font-size: $font-size - 2;//14
 }
 
 //浮动
@@ -106,4 +106,18 @@
 //
 .setwidth {
   width: 1200px;
+}
+
+@media screen and (max-width:1200px) {
+  nav .setwidth {
+	padding: 0!important;
+  }
+  .setwidth {
+    width: $width;
+    padding-left: 15px;
+    box-sizing: border-box;
+  }
+  .logo {
+	margin-left: 15px;
+  }
 }
