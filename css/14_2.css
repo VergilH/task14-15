@@ -1,0 +1,157 @@
+.banner {
+  position: relative;
+  width: 100%;
+  background-color: #f1a750;
+  text-align: center; }
+  .banner img {
+    display: block;
+    margin: 0 auto;
+    width: 1200px; }
+
+@media screen and (max-width: 1200px) {
+  .banner img {
+    width: 100%; } }
+content {
+  display: block;
+  position: relative;
+  margin: 0 auto;
+  width: 1200px;
+  height: 1150px;
+  box-sizing: border-box; }
+
+content div {
+  margin: 0 auto;
+  width: 1200px;
+  height: 50px;
+  box-sizing: border-box;
+  line-height: 50px;
+  align-items: center; }
+
+content img {
+  float: left;
+  margin-left: 20px;
+  width: 140px; }
+
+.introduce {
+  float: right;
+  width: 100%;
+  line-height: 25px; }
+
+.content-list {
+  font-size: 14px;
+  float: left;
+  padding: 0;
+  border: 1px solid #EEEDED;
+  border-radius: 6px;
+  width: 300px;
+  height: 700px;
+  background-color: #FFF; }
+
+.content-list div {
+  font-size: 16px;
+  font-weight: 1000;
+  border-bottom: 1px solid #E6E6E6;
+  width: 300px;
+  height: 60px;
+  line-height: 60px;
+  text-align: center; }
+
+.content-list ul {
+  margin: 0 auto;
+  padding: 20px 0 0 30px;
+  width: 100px;
+  color: #29B078; }
+
+.content-list ul li {
+  margin: 34px 0;
+  width: 70px;
+  height: 16px;
+  line-height: 16px;
+  list-style-type: none;
+  list-style-image: url(../images/li-circle.png); }
+
+.content-main {
+  float: right;
+  border: 1px solid #EEEDED;
+  border-radius: 6px;
+  width: 870px;
+  height: 1000px;
+  color: #999;
+  background-color: #FFF; }
+
+.content-main div {
+  margin-bottom: 23px;
+  padding: 20px 60px;
+  width: 870px;
+  height: 150px;
+  border-bottom: 1px solid #E6E6E6; }
+
+.content-main-text {
+  padding: 13px 70px;
+  width: 870px;
+  box-sizing: border-box;
+  line-height: 25px; }
+
+a:link {
+  color: #29B078;
+  text-decoration: none; }
+
+a:visited {
+  color: #29B078;
+  text-decoration: none; }
+
+a:hover li {
+  color: #FF650E;
+  text-decoration: none;
+  list-style-type: none;
+  list-style-image: url(../images/li-disc.png); }
+
+a:focus li {
+  color: #FF650E;
+  text-decoration: none;
+  list-style-type: none;
+  list-style-image: url(../images/li-disc.png); }
+
+@media screen and (max-width: 1200px) {
+  content {
+    width: 100vw;
+    height: auto;
+    margin: 0 auto 50px;
+    padding: 0 15px;
+    overflow: hidden; }
+
+  content div {
+    width: 100vw; }
+
+  .content-list {
+    width: 30%; }
+
+  .content-list div {
+    width: 100%; }
+
+  .content-main {
+    width: 68%;
+    height: auto; }
+
+  .content-main-text {
+    width: 100%;
+    padding: 3% 8%; }
+
+  .content-main div {
+    width: 100%;
+    height: auto;
+    padding: 3% 8%;
+    overflow: auto; }
+
+  .introduce {
+    width: 100%; } }
+@media screen and (max-width: 500px) {
+  .content-list {
+    width: 100%;
+    margin-bottom: 30px; }
+
+  .content-main {
+    width: 100%;
+    height: auto; } }
+
+/*# sourceMappingURL=14_2.css.map */
