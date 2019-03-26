@@ -8,30 +8,29 @@ menu {
 	width: 1200px;
 	height: auto;
 	a:link {
-	color: #29B078;
+	color: $green;
 	text-decoration:none;
 	}
 	a:visited {
-	color: #29B078;
+	color: $green;
 	text-decoration:none
 	}
 }
 .menu_content {
 	height: 80px;
-	line-height: 80px;
 	border-bottom: 1px solid #D0D6D9;
+	line-height: 80px;
 	box-sizing: border-box;
 }
 .menu_contact {
 	padding: 23px 0 0;
+    height: 60px;
+    border-bottom: 1px solid #EDF1F2;
+    line-height: 12px;
     box-sizing: border-box;
     color: #AFAFAF;
-    height: 60px;
-    line-height: 12px;
-    border-bottom: 1px solid #EDF1F2;
 }
 .menu_title {
-	float: left;
     line-height: 16px;
 }
 .menu_btn {
@@ -43,8 +42,8 @@ menu {
     font: inherit;
     &:focus {
 	outline: none;
-	color: #FFF;
-	background-color: #29B078;
+	color: $white;
+	background-color: $green;
 	}
 }
 .menu_second_content {
@@ -53,7 +52,7 @@ menu {
 }
 @media screen and (max-width:1200px) {
 	menu {
-		width: 100%;
+		width: $width;
 	}
 	.menu_contact {
 		height: auto;
@@ -79,7 +78,7 @@ main {
 		margin: 45px 0 0 0;
 		width: 384px;
 		height: 445px;
-		background-color: #FFF;
+		background-color: $white;
 		font-size: 12px;
 		box-sizing: border-box;
 		border-radius: 6px;
@@ -102,7 +101,6 @@ main {
 	height: 175px;
 }
 .main-summary {
-	float: left;
 	padding-left: 9px;
 	width: 191px;
 	height: 40px;
@@ -121,7 +119,6 @@ main {
 	border-left: 1px solid #EDF1F2;
 }
 .main-middle-right {
-	float: left;
 	padding: 0 11px 0 22px;
 	width: 229px;
 	height: 34px;
@@ -129,7 +126,6 @@ main {
 	color: #333;
 }
 .main-middle-left {
-	float: left;
 	width: 152px;
 	height: 105px;
 	line-height: 105px;
@@ -137,7 +133,6 @@ main {
 	color: #999;
 }
 .main-footer {
-	float: left;
 	padding-left: 9px;
 	width: 385px;
 	height: 40px;
@@ -148,7 +143,6 @@ main {
 	}
 }
 .normal-fontsize {
-	font-size: 14px;
 	color: #333;
 }
 .main_text {
@@ -169,10 +163,10 @@ main {
 	display: none;
 	position: absolute;
 	padding: 85px 40px 0;
-	width: 100%;
-	height: 100%;
+	width: $width;
+	height: $width;
 	text-align: center;
-	color: #FFF;
+	color: $white;
 	box-sizing: border-box;
 	border-radius: 6px;
 	background-color: rgba(51,51,51,0.9);
@@ -186,7 +180,7 @@ main {
 		margin-left: 15px;
 	}
 	main {
-		width: 100%;
+		width: $width;
 		span {
 		margin-left: 2%;
 		width: 47%;
@@ -197,13 +191,13 @@ main {
 		margin: 45px 0 0 2%;
 	}
 	.main_top {
-		width: 100%;
+		width: $width;
 		height: 128px;
 		padding-left: 120px;
 		box-sizing: border-box;
 	}
 	.main_text {
-		width: 100%;
+		width: $width;
 		margin-top: 20px;
 	}
 	.main-summary {
@@ -219,7 +213,7 @@ main {
 		width: 60%;
 	}
 	.main-footer {
-		width: 100%;
+		width: $width;
 		height: auto;
 	}
 	.main_top img {
@@ -237,7 +231,7 @@ main {
 		height: auto;
 	}
 	.main-summary {
-		width: 100%;
+		width: $width;
 	}
 	.main-span-right {
 		margin: 45px 2% 0;

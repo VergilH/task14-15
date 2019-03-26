@@ -3,9 +3,9 @@
 
 .banner {
 	position: relative;
-	width: 100%;
-	background-color: #f1a750;
+	width: $width;
 	text-align: center;
+	background-color: $orange;
 	img {
 		display: block;
 		margin: 0 auto;
@@ -16,7 +16,7 @@
 @media screen and (max-width: 1200px) {
 	.banner {
 		img {
-			width: 100%;
+			width: $width;
 		}
 	}
 }
@@ -28,86 +28,73 @@ content {
 	width: 1200px;
 	height: 1150px;
 	box-sizing: border-box;
-}
-
-content div {
-	margin: 0 auto;
-	width: 1200px;
-  height: 50px;
-  box-sizing: border-box;
-  line-height: 50px;
-  align-items: center;
-}
-
-content img {
-	float: left;
+	div {
+		margin: 0 auto;
+		width: 1200px;
+  	height: 50px;
+  	box-sizing: border-box;
+  	line-height: 50px;
+  	align-items: center;
+	}
+	img {
+		float: left;
     margin-left: 20px;
     width: 140px;
+	}
 }
 
-
 .introduce {
-    float: right;
-    width: 100%;
+    width: $width;
     line-height: 25px;
 }
 
-.content-list {
-	font-size: 14px;
-	float: left;
+.content_list {
 	padding: 0;
-	border: 1px solid #EEEDED;
-    border-radius: 6px;
 	width: 300px;
 	height: 700px;
-	background-color: #FFF;
-}
-
-.content-list div {
-	font-size: 16px;
-	font-weight: 1000;
-	border-bottom: 1px solid #E6E6E6;
-	width: 300px;
-	height: 60px;
-	line-height: 60px;
-	text-align: center;
-}
-
-.content-list ul {
+	border: 1px solid #EEEDED;
+  	border-radius: 6px;
+	background-color: $white;
+	div {
+		width: 300px;
+		height: 60px;
+		border-bottom: 1px solid #E6E6E6;
+		line-height: 60px;
+		font-size: 16px;
+		font-weight: 1000;
+		text-align: center;
+	}
+	ul {
     margin: 0 auto;
-	padding: 20px 0 0 30px;
+		padding: 20px 0 0 30px;
     width: 100px;
-	color: #29B078;
+		color: $green;
+		li {
+    	margin: 34px 0;
+			width: 70px;
+    	height: 16px;
+    	line-height: 16px;
+			list-style-type: none;
+			list-style-image: url(../images/li-circle.png);
+		}
+	}
 }
-
-.content-list ul li {
-    margin: 34px 0;
-	width: 70px;
-    height: 16px;
-    line-height: 16px;
-	list-style-type: none;
-	list-style-image: url(../images/li-circle.png);
-}
-
-.content-main {
-	float: right;
-    border: 1px solid #EEEDED;
-    border-radius: 6px;
-    width: 870px;
-    height: 1000px;
-    color: #999;
-    background-color: #FFF;
-}
-
-.content-main div {
-	margin-bottom: 23px;
+.content_main {
+  width: 870px;
+  height: 1000px;
+  border: 1px solid #EEEDED;
+  border-radius: 6px;
+  color: #999;
+  background-color: $white;
+  div {
+		margin-bottom: 23px;
     padding: 20px 60px;
-	width: 870px;
-	height: 150px;
-	border-bottom: 1px solid #E6E6E6;
+		width: 870px;
+		height: 150px;
+		border-bottom: 1px solid #E6E6E6;
+	}
 }
-
-.content-main-text {
+.content_main_text {
 	padding: 13px 70px;
 	width: 870px;
 	box-sizing: border-box;
@@ -115,27 +102,24 @@ content img {
 }
 
 a:link {
-	color: #29B078;
+	color: $green;
 	text-decoration:none;
 }
-
 a:visited {
-	color: #29B078;
+	color: $green;
 	text-decoration:none;
 }
-
 a:hover li{
 	color: #FF650E;
-    text-decoration: none;
-    list-style-type: none;
-    list-style-image: url(../images/li-disc.png);
+  text-decoration: none;
+  list-style-type: none;
+  list-style-image: url(../images/li-disc.png);
 }
-
 a:focus li{
 	color: #FF650E;
-    text-decoration: none;
-    list-style-type: none;
-    list-style-image: url(../images/li-disc.png);
+  text-decoration: none;
+  list-style-type: none;
+  list-style-image: url(../images/li-disc.png);
 }
 
 @media screen and (max-width:1200px) {
@@ -145,49 +129,41 @@ a:focus li{
 		margin: 0 auto 50px;
 		padding: 0 15px;
 		overflow: hidden;
+		div {
+			width: 100vw;
+		}
 	}
-
-	content div {
-		width: 100vw;
-	}
-
-	.content-list {
+	.content_list {
 		width: 30%;
+		div {
+			width: $width;
+		}
 	}
-
-	.content-list div {
-		width: 100%;
-	}
-
-	.content-main {
+	.content_main {
 		width: 68%;
 		height: auto;
+		div {
+			width: $width;
+			height: auto;
+			padding: 3% 8%;
+			overflow: auto;
+		}
 	}
-
-	.content-main-text {
-		width: 100%;
+	.content_main_text {
+		width: $width;
 		padding: 3% 8%;
 	}
-
-	.content-main div {
-		width: 100%;
-		height: auto;
-		padding: 3% 8%;
-		overflow: auto;
-	}
-
 	.introduce {
-		width: 100%;
+		width: $width;
 	}
 }
-
 @media screen and (max-width: 500px) {
-	.content-list {
-		width: 100%;
+	.content_list {
+		width: $width;
 		margin-bottom: 30px;
 	}
-	.content-main {
-		width: 100%;
+	.content_main {
+		width: $width;
 		height: auto;
 	}
 }
